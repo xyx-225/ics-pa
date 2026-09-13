@@ -1,5 +1,5 @@
-STUID = 231220000
-STUNAME = 张三
+STUID = 251511002
+STUNAME = 徐宇轩
 
 # DO NOT modify the following code!!!
 
@@ -18,6 +18,6 @@ _default:
 
 submit:
 	git gc
-	STUID=$(STUID) STUNAME=$(STUNAME) bash -c "$$(curl -s http://why.ink:8080/static/submit.sh)"
+	STUID=$(STUID) STUNAME=$(STUNAME) bash -c "$$(curl -sL http://nasa.nju.edu.cn/icspa26/submit.sh)"
 
 .PHONY: default submit
